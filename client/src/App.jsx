@@ -6,7 +6,7 @@ import axios from 'axios'
 function App() {
   const [name,setName]=useState('')
   function sampleButtonHandler(){
-    axios.get('http://localhost:3000/sample').then(({data})=>{
+    axios.get('https://sample1-akwo.onrender.com/sample').then(({data})=>{
       setName(data)
     }).catch(err=>console.log(err))
   }
